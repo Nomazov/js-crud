@@ -1,0 +1,22 @@
+main {
+  margin: 50px;
+}
+
+form {
+  padding: 16px;
+  border: 1px solid rgb(218, 215, 215);
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px grey;
+}
+
+.input-text__area {
+  width: 100%;
+  border: 1px solid rgb(204, 202, 202);
+  resize: none;
+}
+
+.text-primary {
+  margin-bottom: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */

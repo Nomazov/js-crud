@@ -1,0 +1,13 @@
+{{#each list}}
+<div class="card col-4">
+    <h3 class="card-title mb-3">{{name}}</h3>
+    <p class="card-text">{{description}}</p>
+    <p class="text-muted">{{id}}</p>
+    <div class="list__action">
+        <p>{{price}}</p>
+        <a href="/product-edit?id={{id}}" class="list__action-button">
+            Редагувати
+        </a>
+    </div>
+</div>
+{{/each}}

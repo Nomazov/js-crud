@@ -1,0 +1,18 @@
+<main>
+    <h1 class="text-primary">Список товарів</h1>
+
+    <a href="/product-create" class="btn btn-outline-warning mb-3">Додати інший товар</a>
+    <div class="product-list">
+
+        {{#with data.products}}
+        {{#if isEmpty}}
+        <mark>Список пустий</mark>
+
+        {{else}}
+        {{> product-card.hbs}}
+        {{/if}}
+        {{/with}}
+
+    </div>
+
+</main>
