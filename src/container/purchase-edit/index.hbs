@@ -1,0 +1,16 @@
+<main class="main">
+
+    {{> purchase-heading title="Зміна данних"}}
+
+    {{#with purchase}}
+    <form method="post" action="/purchase-edit?id={{id}}" class="form-cart">
+        {{>field label="Ім'я" name="firstname" value=firstname}}
+        {{>field label="Прізвище" name="lastname" value=lastname}}
+        {{>field label="Телефон" name="phone" value=phone}}
+        {{>field label="Пошта" name="email" value=email}}
+
+
+        {{>purchase-button text="Зберегти зміни"}}
+        {{/with}}
+    </form>
+</main>

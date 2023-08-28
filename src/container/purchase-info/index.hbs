@@ -1,0 +1,43 @@
+<main class="main">
+    {{#with data.list}}
+    {{> purchase-heading title="Зміна данних"}}
+
+    {{>field-info name="ID:" value=id }}
+
+    {{> divider}}
+
+    <div class="field">
+        {{>field-info name="Ім'я:" value=firstname}}
+
+        {{>field-info name="Прізвище:" value=lastname}}
+
+        {{>field-info name="Телефон:" value=phone}}
+
+        {{>field-info name="Електронна пошта:" value=email}}
+    </div>
+
+    {{> divider}}
+
+    {{>field-info name="Назва товару:" value=title}}
+
+    {{>field-info name="Коментар:" value=comment}}
+
+    {{> divider}}
+
+    <div class="field">
+        {{>field-info name="Вартість товарів:" value=productPrice}}
+
+        {{>field-info name="Вартість доставки:" value=deliveryPrice}}
+
+        {{>field-info name="Сума до сплати:" value=totalPrice}}
+
+        {{>field-info name="Нараховані бонуси:" value=bonus}}
+    </div>
+
+
+    <a href="/purchase-edit?id={{id}}" class="edit__link">
+        Змінити дані
+    </a>
+
+    {{/with}}
+</main>

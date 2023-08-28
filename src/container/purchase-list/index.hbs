@@ -1,0 +1,28 @@
+<main class="main">
+    {{> purchase-heading title="Мої замовлення"}}
+
+    {{#with data.purchases}}
+    {{#each list}}
+
+    <div class="list">
+        <div class="list__item">
+            <span class="list__item-label">ID: {{id}}</span>
+        </div>
+        <div class="list__item">
+            <span class="list__item-label">Товари</span>
+            <span class="list__item-text">{{title}}</span>
+        </div>
+        <div class="list__item">
+            <span class="list__item-label">Сума замовлення</span>
+            <span class="list__item-text">{{totalPrice}}</span>
+        </div>
+        <div class="list__item">
+            <span class="list__item-label">Нараховані бонуси</span>
+            <span class="list__item-text">{{bonus}}</span>
+        </div>
+    </div>
+    {{> divider}}
+    {{/each}}
+    {{/with}}
+
+</main>

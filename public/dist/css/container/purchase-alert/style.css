@@ -1,0 +1,24 @@
+main {
+  margin: 50px;
+}
+
+form {
+  padding: 16px;
+  border: 1px solid rgb(218, 215, 215);
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  width: 300px;
+  height: min-content;
+  align-self: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
