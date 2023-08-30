@@ -1,0 +1,35 @@
+<main class="main">
+    {{#with data}}
+    <div class="main__content">
+        <header class="header">
+            <h1 class="title">Моя бібліотека</h1>
+
+            <div class="header__actions">
+                <a href="/spotify-search" class="add_button">
+                    <img src="/svg/search-button.svg" alt="">
+                </a>
+
+                <a href="/spotify-choose" class="add_button">
+                    <img src="/svg/add-search-button.svg" alt="">
+                </a>
+            </div>
+        </header>
+
+
+        {{#if isEmpty}}
+        <h2 class="title title--center">Список пустий</h2>
+        {{else}}
+        <div class="card__list">
+            {{#each playList}}
+            <div class="card">
+                <img src={{image}} alt="{{name}}" class="card__image">
+
+                <span class="card__title">{{name}}</span>
+
+                <span class="card__text">{{trackCount}}</span>
+            </div>
+            {{/each}}
+            {{/if}}
+        </div>
+        {{/with}}
+</main>
